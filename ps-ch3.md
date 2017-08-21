@@ -49,5 +49,52 @@ Note: client PC and main was updated 17 August 2017
 Q2) Windows-only: can you find any cmdlets capable of converting other cmdlets output into HTML?
 
 ```
-> example
-...
+> Get-Help *HTML
+
+NAME
+    ConvertTo-Html
+
+SYNTAX
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+Get-Help ConvertTo-Html | Out-File c:\Users\client\converttohtml.txt
+```
+See converttohtml.txt for result of file
+
+Q3: Partially Windows-only: are there any cmdlets that can redirect output into a file or to a printer?
+
+```
+> Get-Help *File
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Import-PowerShellDataFile         Function  Microsoft.PowerShell.U...
+New-TemporaryFile                 Function  Microsoft.PowerShell.U... Creates a temporary file.
+New-PSSessionConfigurationFile    Cmdlet    Microsoft.PowerShell.Core Creates a file that defines a session configur...
+New-PSRoleCapabilityFile          Cmdlet    Microsoft.PowerShell.Core Creates a file that defines a set of capabilit...
+Test-PSSessionConfigurationFile   Cmdlet    Microsoft.PowerShell.Core Verifies the keys and values in a session conf...
+Out-File                          Cmdlet    Microsoft.PowerShell.U... Sends output to a file.
+Unblock-File                      Cmdlet    Microsoft.PowerShell.U... Unblocks files that were downloaded from the I...
+Add-BitsFile                      Cmdlet    BitsTransfer              Add-BitsFile...
+Set-AppXProvisionedDataFile       Cmdlet    Dism                      Set-AppXProvisionedDataFile...
+Get-NetConnectionProfile          Function  NetConnection             ...
+Set-NetConnectionProfile          Function  NetConnection             ...
+Get-NetFirewallProfile            Function  NetSecurity               ...
+Set-NetFirewallProfile            Function  NetSecurity               ...
+Disable-NetIPHttpsProfile         Function  NetworkTransition         ...
+Enable-NetIPHttpsProfile          Function  NetworkTransition         ...
+Get-SmbOpenFile                   Function  SmbShare                  ...
+Close-SmbOpenFile                 Function  SmbShare                  ...
+
+
+Get-Help Out-File | Out-File c:\Users\client\outfile.txt
+```
+See outfile.txt for details
+
+Q4: How many cmdlets are available for working with processes (Hint: remember that cmdlets all use a singular noun)
