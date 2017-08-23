@@ -68,7 +68,6 @@ Get-Help ConvertTo-Html | Out-File c:\Users\client\converttohtml.txt
 See converttohtml.txt for result of file
 
 Q3: Partially Windows-only: are there any cmdlets that can redirect output into a file or to a printer?
-
 ```
 > Get-Help *File
 
@@ -98,3 +97,16 @@ Get-Help Out-File | Out-File c:\Users\client\outfile.txt
 See outfile.txt for details
 
 Q4: How many cmdlets are available for working with processes (Hint: remember that cmdlets all use a singular noun)
+```
+> Get-Help *process
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Enter-PSHostProcess               Cmdlet    Microsoft.PowerShell.Core Connects to and enters into an interactive ses...
+Exit-PSHostProcess                Cmdlet    Microsoft.PowerShell.Core Closes an interactive session with a local pro...
+Debug-Process                     Cmdlet    Microsoft.PowerShell.M... Debugs one or more processes running on the lo...
+Get-Process                       Cmdlet    Microsoft.PowerShell.M... Gets the processes that are running on the loc...
+Start-Process                     Cmdlet    Microsoft.PowerShell.M... Starts one or more processes on the local comp...
+Stop-Process                      Cmdlet    Microsoft.PowerShell.M... Stops one or more running processes.
+Wait-Process                      Cmdlet    Microsoft.PowerShell.M... Waits for the processes to be stopped before a...
+```
