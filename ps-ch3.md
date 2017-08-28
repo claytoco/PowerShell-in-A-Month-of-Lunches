@@ -183,3 +183,43 @@ Get-Help Get-EventLog -parameter Newest
     Accept pipeline input?       False
     Accept wildcard characters?  false
 ```
+
+Q9: Windows-only: is there a way to retrieve a list of the services that are installed on a remote computer?
+```
+> Get-Help *service
+
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Get-Service                       Cmdlet    Microsoft.PowerShell.M... Gets the services on a local or remote computer.
+New-Service                       Cmdlet    Microsoft.PowerShell.M... Creates a new Windows service.
+Restart-Service                   Cmdlet    Microsoft.PowerShell.M... Stops and then starts one or more services.
+Resume-Service                    Cmdlet    Microsoft.PowerShell.M... Resumes one or more suspended (paused) services.
+Set-Service                       Cmdlet    Microsoft.PowerShell.M... Starts, stops, and suspends a service, and cha...
+Start-Service                     Cmdlet    Microsoft.PowerShell.M... Starts one or more stopped services.
+Stop-Service                      Cmdlet    Microsoft.PowerShell.M... Stops one or more running services.
+Suspend-Service                   Cmdlet    Microsoft.PowerShell.M... Suspends (pauses) one or more running services.
+
+>Get-Help Get-Service | Out-File c:\Users\client\getservice.txt
+```
+see getservice.txt for results.
+
+Q10: Is there a way to see what processes are running on a remote computer (you can find the answer on non-Windows operating systems, but the command itself might not work for you.)
+```
+>Get-Help *process
+
+Name                              Category  Module                    Synopsis
+----                              --------  ------                    --------
+Enter-PSHostProcess               Cmdlet    Microsoft.PowerShell.Core Connects to and enters into an interactive ses...
+Exit-PSHostProcess                Cmdlet    Microsoft.PowerShell.Core Closes an interactive session with a local pro...
+Debug-Process                     Cmdlet    Microsoft.PowerShell.M... Debugs one or more processes running on the lo...
+Get-Process                       Cmdlet    Microsoft.PowerShell.M... Gets the processes that are running on the loc...
+Start-Process                     Cmdlet    Microsoft.PowerShell.M... Starts one or more processes on the local comp...
+Stop-Process                      Cmdlet    Microsoft.PowerShell.M... Stops one or more running processes.
+Wait-Process                      Cmdlet    Microsoft.PowerShell.M... Waits for the processes to be stopped before a...
+
+> Get-Help Get-Process | Out-File c:\Users\client\getprocess.txt
+```
+see getprocess.txt for details.
+
+Q11: Examine the help file for the Out-File cmdlet. The files created by this cmdlet default to a width of how many characters? Is there a parameter that would enable you to change the width?
