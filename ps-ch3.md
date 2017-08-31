@@ -1,3 +1,5 @@
+## UNCLASSIFIED <br> Publically Available
+
 # Notes/Workings from chapter
 
 reference point: 3.1
@@ -223,3 +225,42 @@ Wait-Process                      Cmdlet    Microsoft.PowerShell.M... Waits for 
 see getprocess.txt for details.
 
 Q11: Examine the help file for the Out-File cmdlet. The files created by this cmdlet default to a width of how many characters? Is there a parameter that would enable you to change the width?
+
+```
+
+```
+
+Q12: By Default, Out-File overwrites any existing file that has the same filename as what you specify. Is there a parameter that would prevent the cmdlet from overwriting an existing file?
+
+```
+
+```
+
+Q13: How could you see a list of all aliases defined in PowerShell?
+
+```
+
+```
+
+Q14: Using both a alias and abbreviated parameter names, what is the shortest command line you could type to retrieve a list of running processes form a computer named Server1?
+
+```
+
+```
+
+Q15: How many cmdlets are available that can deal with generic objects? (Hint: remember to use a singular noun like object rather than a plural one like objects.)
+
+```
+
+```
+Q16:
+
+
+Document Made By: Corey John Clayton
+<br> Derived From: Chapter 3, Learn Windows PowerShell in a Month of Lunches, Third Edition. Don Jones and Jeffery Hicks
+<br>Completed On: 20170801
+
+
+Copyright 2017, Manning Publications Co. All Rights Reserved
+
+## UNCLASSIFIED <br> Publically Available
