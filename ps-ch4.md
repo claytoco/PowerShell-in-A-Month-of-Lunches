@@ -911,14 +911,18 @@ Stopped  msiserver          Windows Installer
 Q7: (Windows Only, Firewall rules) Display a list of all Windows Firewall rules. You'll need to use Help or Get-Command to discover the necessary cmdlet.
 
 ```
+> Get-NetFirewallRule
 
 ```
+See getnetfirewallrule.txt for results
 
 Q8: (Windows Only, Firewall rules) Display a list only of inbound Windows Firewall rules. you can use the same cmdlet as in the previous task, but you'll need to read its help to discover the necessary parameter and its allowable values.
 
 ```
+>  Get-NetFirewallRule -Direction Inbound
 
 ```
+see firewallruleinbound.txt for results
 
 Document Made By: Corey John Clayton  
 Derived From: Chapter 4, Learn Windows PowerShell in a Month of Lunches, Third Edition. Don Jones and Jeffery Hicks  
