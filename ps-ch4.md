@@ -21,7 +21,7 @@ non-common aliases are avoided to limit the need to reassign them.
 
 
 # Chapter Lab
-**NOTICE: results Current on winclient.lab.internal.local as at 201708(date pending)**
+**NOTICE: results Current on winclient.lab.internal.local as at 20170814**
 
 Q1: Display a list of running processes
 ```
